@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero_section/hero';
 import Section from './components/section/section'
-import { useState } from 'react';
+// import { useState } from 'react';
 
 export default function App() {
       // const [arryjobs, setArryJobs] = useState([
