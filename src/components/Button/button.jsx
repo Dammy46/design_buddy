@@ -1,9 +1,10 @@
 import React from 'react'
 
-const button = ({btnValue, btnStyle}) => {
+const button = ({btnValue, btnStyle, btnIcon}) => {
   return (
          <button className={btnStyle}>
-     {btnValue}
+      {btnValue}
+      {btnIcon}
      </button>
 
 

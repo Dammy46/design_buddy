@@ -6,10 +6,10 @@ import './Navbar.css';
 import Btn from '../Button/button';
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Home', href: '#', current: true },
+  { name: 'Job', href: '#', current: false },
+  { name: 'Get Hired', href: '#', current: false },
+  { name: 'Community', href: '#', current: false },
 ];
 
 const classNames = (...classes) => {
@@ -70,8 +70,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden absolute top-0 right-0 bg-red-500 transition w-52 h-full">
-            <div className="px-2 pt-2 pb-3 space-y-1 mt-20 text-center">
+          <Disclosure.Panel className="sm:hidden lg:absolute top-0 right-0 bg-red-500 transition w-52 h-screen fixed">
+            <div className="px-2 pt-2 pb-3 mt-20 text-center">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -86,6 +86,7 @@ const Navbar = () => {
                   {item.name}
                 </Disclosure.Button>
               ))}
+              <Btn btnValue={'Post job'} btnStyle={'mt-5 border-2 border-white uppercase font-medium rounded-md text-white py-3 px-5'} />
             </div>
           </Disclosure.Panel>
         </>
