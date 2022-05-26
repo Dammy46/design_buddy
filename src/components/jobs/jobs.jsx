@@ -1,9 +1,9 @@
 import React from 'react';
 import Job from '../Job/job'
-const Jobs = ({ jobs}) => {
+const Jobs = ({ arry}) => {
   return (
     <div>
-      {jobs.map((jb) => (
+      {arry.map((jb) => (
          <Job key={jb.id} eachJob={jb} />
       ))}
     </div>
