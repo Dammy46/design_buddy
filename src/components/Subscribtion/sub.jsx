@@ -23,7 +23,7 @@ const sub = () => {
         />
         <input
           type="Submit"
-          value={'Subscribe'}
+          defaultValue={'Subscribe'}
           placeholder="Product Design"
           className="lg:block md:block hidden text-sm py-4 px-12 border-2 bg-red-500 border-red-500 focus:outline-none -ml-2.5 rounded-md font-medium text-white cursor-pointer"
         />
