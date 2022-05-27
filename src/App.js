@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar/navbar'
 import Hero from './components/Hero_section/hero';
 import Section from './components/Section/section'
 import Subscribe from './components/Subscribtion/sub'
