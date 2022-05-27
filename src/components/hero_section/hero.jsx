@@ -1,6 +1,6 @@
 import React from 'react'
 import Btn from '../Button/button'
-import Search from '../form/form'
+import Search from '../Form/form'
 const hero = () => {
   return (
     <div className="container lg:text-center mx-auto px-8 sm:px-6 md:text-left text-left">
