@@ -2,7 +2,6 @@ import React from 'react';
 import { Fragment } from 'react';
 import { Disclosure } from '@headlessui/react';
 import {  MenuIcon, XIcon } from '@heroicons/react/outline';
-import './Navbar.css';
 import Btn from '../Button/button';
 
 const navigation = [
@@ -21,7 +20,7 @@ const Navbar = () => {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="container mx-auto sm:px-6 lg:px-8 px-8">
+          <div className="container mx-auto mt-0 mb-0 sm:px-6 lg:px-8 px-8">
             <div className="relative flex justify-between h-20 items-center">
               <div className="absolute inset-y-0 right-0 flex sm:hidden z-50">
                 {/* Mobile menu button*/}
@@ -42,7 +41,7 @@ const Navbar = () => {
 
               <div className="flex items-center content-center">
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 items-center">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -51,7 +50,7 @@ const Navbar = () => {
                           item.current
                             ? 'text-red-500'
                             : 'text-gray-800 hover:text-red-500',
-                          'px-3 py-2 rounded-md text-lg font-medium'
+                          'px-3 py-2 rounded-md text-base font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -61,7 +60,7 @@ const Navbar = () => {
                     <Btn
                       btnValue={'post jobs'}
                       btnStyle={
-                        'bg-red-500 p-4 font-semibold border-none uppercase tracking-wide rounded-lg cursor-pointer ml-3 text-gray-50'
+                        'bg-red-500 p-4 font-normal border-none uppercase tracking-wide rounded-lg cursor-pointer ml-3 text-gray-50'
                       }
                     />
                   </div>

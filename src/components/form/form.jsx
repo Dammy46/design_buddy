@@ -41,9 +41,9 @@ const Search = () => {
           {({ open }) => (
             <>
               <div className="relative">
-                <Listbox.Button className="relative lg:w-48 w-32 bg-white border-none rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none sm:text-sm">
+                <Listbox.Button className="relative lg:w-48 w-32 bg-white border-none rounded-md lg:pl-3 pl-2 pr-10 py-2 text-left cursor-default focus:outline-none sm:text-sm">
                   <span className="flex items-center">
-                    <span className="ml-3 block truncate text-xl">{selected.name}</span>
+                    <span className="ml-3 block truncate lg:text-xl text-base">{selected.name}</span>
                   </span>
                   <span className="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
                     <SelectorIcon
@@ -113,14 +113,14 @@ const Search = () => {
           type="text"
           name="price"
           id="price"
-          className="focus:outline-none block w-full lg:pl-7 lg:pr-12  border-gray-300 rounded-md py-2.5 text-xl px-4"
+          className="focus:outline-none block w-full lg:pl-7 lg:pr-12  border-gray-300 rounded-md py-2.5 lg:text-xl text-base px-4"
           placeholder="Search by job title, company"
         />
       </div>
       <Btn
         btnValue={'Search'}
         btnStyle={
-          'hidden lg:block md:block bg-red-500 lg:py-4 lg:px-8 w-48 md:44 px-3 py-4 font-sans tracking-wider text-xl font-semibold border-none uppercase tracking-wide rounded-lg cursor-pointer text-gray-50'
+          'hidden lg:block md:block bg-red-500 lg:py-4 lg:px-4 w-48 md:44 px-3 py-4 font-sans tracking-wider text-base font-normal border-none uppercase tracking-wide rounded-lg cursor-pointer text-gray-50'
         }
       />
     </div>

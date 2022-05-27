@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero_section/hero';
 import Section from './components/section/section'
+import Subscribe from './components/Subscribtion/sub'
 // import { useState } from 'react';
 
 export default function App() {
@@ -33,7 +34,7 @@ export default function App() {
           time: 'Fulltime',
 
           remote: 'Remote',
-          active: false,
+          active: true,
         },
         {
           id: 4,
@@ -103,7 +104,7 @@ export default function App() {
           time: 'Fulltime',
 
           remote: 'Remote',
-          active: true,
+          active: false,
         },
       ];
   return (
@@ -111,7 +112,8 @@ export default function App() {
     <div className='overflow-y-auto '>
       <Navbar btnValue={'nothing'} />
       <Hero />
-      <Section jobs={arryjobs}/>
+      <Section jobs={arryjobs} />
+      <Subscribe />
     </div>
   );
 }

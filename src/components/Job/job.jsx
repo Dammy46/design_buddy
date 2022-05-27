@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Btn from '../Button/button'
 const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ');
 };
@@ -13,22 +13,40 @@ const job = ({ eachJob }) => {
          'w-full items-center mt-12 rounded-lg'
        )}
      >
-       <div className="flex py-6 px-7">
+       <div className="flex p-4">
          <div className="flex items-center">
            <img
              src={eachJob.file}
              alt="avater"
-             className="lg:w-36 md:w-28 w-24 lg:h-auto md:h-auto h-3/6 rounded bg-white"
+             className={classNames(
+               eachJob.active ? 'bg-white' : 'bg-current',
+               'lg:w-24 md:w-28 w-24 lg:h-auto h-auto rounded '
+             )}
            />
          </div>
          <div className="lg:ml-9 ml-5">
-           <h4 className="lg:text-2xl md:text-2xl text-xl">{eachJob.brand}</h4>
-           <h2 className="lg:text-3xl md:text-3xl text-2xl mt-5 text-neutral font-medium">
+           <span className="lg:text-2xl md:text-2xl text-base">
+             {eachJob.brand}
+           </span>
+           <h2 className="lg:text-3xl md:text-3xl text-xl my-2.5 text-neutral font-medium">
              {eachJob.job}
            </h2>
-           <p className="text-normal mt-5 ">
+           <p className="lg:text-normal md:text-normal text-sm">
              {eachJob.time} • {eachJob.remote}
            </p>
+         </div>
+         <div
+           className={classNames(eachJob.active ? 'ml-auto block' : 'hidden')}
+         >
+           <span className="uppercase text-green-600 lg:block md:block hidden font-medium">
+             featured 🔥
+           </span>
+           <Btn
+             btnValue={'Apply Now'}
+             btnStyle={
+               'px-5 py-2.5 my-5 text-white bg-white text-red-500 font-normal rounded lg:block md:block hidden'
+             }
+           />
          </div>
        </div>
      </div>

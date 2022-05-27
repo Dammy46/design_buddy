@@ -12,12 +12,12 @@ const section = ({jobs}) => {
           <Btn
             btnValue={'filter'}
             btnStyle={
-              'lg:py-4 lg:px-8 px-4 py-3 font-sans font-semibold border-teal-900 border-4 uppercase tracking-wider rounded-lg cursor-pointer text-teal-900 flex inline-flex items-center justify-around lg:w-44 lg:text-xl text-base w-32'
+              'lg:py-4 lg:px-8 px-4 py-3 font-sans font-normal border-teal-900 border-4 uppercase tracking-wider rounded-lg cursor-pointer text-teal-900 flex inline-flex items-center justify-around lg:w-44 lg:text-xl text-base w-32 lg:inline-flex hidden'
             }
             btnIcon={icon}
           />
         </div>
-        <Jobs arry={jobs}/>
+        <Jobs arry={jobs} />
       </div>
     </section>
   );
