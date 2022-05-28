@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero_section/hero';
-import Section from './components/Section/section'
+import Section from './components/section/section'
 import Subscribe from './components/Subscribtion/sub'
 // import { useState } from 'react';
 
