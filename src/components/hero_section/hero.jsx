@@ -1,6 +1,6 @@
 import React from 'react'
 import Btn from '../Button/button'
-import Search from '../form/form'
+import Search from '../Form/form'
 const hero = () => {
   return (
     <div className="container lg:text-center mx-auto px-8 sm:px-6 md:text-left text-left">
@@ -16,13 +16,13 @@ const hero = () => {
         <Btn
           btnValue={'post a job'}
           btnStyle={
-            'bg-red-500 lg:py-3 lg:px-4 px-2 py-2.5 font-sans tracking-wider text-base font-normal border-4 border-red-500 uppercase tracking-wide rounded-lg cursor-pointer sm:mr-3 mr-7 text-gray-50'
+            'bg-red-500 lg:py-3 lg:px-4 px-2 py-2.5 font-sans tracking-wider text-base font-normal border-2 border-red-500 uppercase tracking-wide rounded-lg cursor-pointer sm:mr-3 mr-7 text-gray-50'
           }
         />
         <Btn
           btnValue={'Get a Job'}
           btnStyle={
-            'lg:py-3 lg:px-4 px-2 py-2.5 font-sans text-base font-semibold border-teal-900 border-4 uppercase tracking-wide rounded-lg cursor-pointer text-teal-900'
+            'lg:py-3 lg:px-4 px-2 py-2.5 font-sans text-base font-semibold border-teal-900 border-2 uppercase tracking-wide rounded-lg cursor-pointer text-teal-900'
           }
         />
       </div>

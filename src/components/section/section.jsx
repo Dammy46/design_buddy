@@ -1,7 +1,7 @@
 import React from 'react'
 import Btn from '../Button/button'
 import {FilterIcon} from '@heroicons/react/outline'
-import Jobs from '../jobs/jobs'
+import Jobs from '../Jobs/jobs'
 const section = ({jobs}) => {
    const icon = <FilterIcon className='w-4 h-4'/>
   return (
@@ -12,7 +12,7 @@ const section = ({jobs}) => {
           <Btn
             btnValue={'filter'}
             btnStyle={
-              'lg:py-4 lg:px-8 px-4 py-3 font-sans font-normal border-teal-900 border-4 uppercase tracking-wider rounded-lg cursor-pointer text-teal-900 flex inline-flex items-center justify-around lg:w-44 lg:text-xl text-base w-32 lg:inline-flex hidden'
+              'lg:py-4 lg:px-8 px-4 py-3 font-sans font-normal border-teal-900 border-2 uppercase tracking-wider rounded-lg cursor-pointer text-teal-900 flex inline-flex items-center justify-around lg:w-44 lg:text-xl text-base w-32 lg:inline-flex hidden'
             }
             btnIcon={icon}
           />

@@ -1,12 +1,13 @@
 import './App.css';
-import Navbar from './components/navbar/Navbar'
-import Hero from './components/hero_section/hero';
-import Section from './components/section/section'
+import Navbar from './components/Navbar/navbar'
+import Hero from './components/Hero_section/hero';
+import Section from './components/Section/section'
 import Subscribe from './components/Subscribtion/sub'
+import Footer from './components/Footer/footer'
 // import { useState } from 'react';
 
 export default function App() {
-      const arryjobs  = [
+      const arryjobs = [
         {
           id: 1,
           file: 'https://i.stack.imgur.com/UEvOq.png',
@@ -105,15 +106,21 @@ export default function App() {
 
           remote: 'Remote',
           active: false,
-        },
+        }
       ];
+  // const currentPage = 1
+  // const postsPerPage = 10
+  //   const indexOfLastPost = currentPage * postsPerPage;
+  //   const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  //   const currentPosts = arryjobs.slice(indexOfFirstPost, indexOfLastPost);
   return (
 
-    <div className='overflow-y-auto '>
+    <div className=''>
       <Navbar btnValue={'nothing'} />
       <Hero />
       <Section jobs={arryjobs} />
       <Subscribe />
+      <Footer />
     </div>
   );
 }

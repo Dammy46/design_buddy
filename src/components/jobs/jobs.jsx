@@ -2,7 +2,7 @@ import React from 'react';
 import Job from '../Job/job'
 import Banner from '../Banner/banner'
 const Jobs = ({ arry }) => {
-      const id = Math.floor(Math.random() * 2000) + 1;
+      const id = Math.floor(Math.random() * 100);
   return (
     <div>
       {arry.map((jb, index) => (

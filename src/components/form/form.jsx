@@ -108,7 +108,7 @@ const Search = () => {
             </>
           )}
         </Listbox>
-        <div className="border-r-4 border-slate-600 h-9"></div>
+        <div className="border-r-2 border-slate-600 h-9"></div>
         <input
           type="text"
           name="price"
