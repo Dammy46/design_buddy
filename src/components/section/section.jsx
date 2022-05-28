@@ -1,7 +1,7 @@
 import React from 'react'
 import Btn from '../Button/button'
 import {FilterIcon} from '@heroicons/react/outline'
-import Jobs from '../Jobs/jobs'
+import Jobs from '../jobs/jobs'
 const section = ({jobs}) => {
    const icon = <FilterIcon className='w-4 h-4'/>
   return (
