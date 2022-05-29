@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="relative flex justify-between h-20 items-center">
               <div className="absolute inset-y-0 right-0 flex sm:hidden z-50">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center  justify-center p-2 rounded-md text-gray-400 hover:text-white ">
+                <Disclosure.Button className="inline-flex items-center  justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
