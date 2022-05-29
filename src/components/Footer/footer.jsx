@@ -14,46 +14,46 @@ const footer = () => {
       </div>
       <ul className="mb-4">
         <h5 className="text-xl font-medium text-slate-900">Quick Link</h5>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">About</a>
         </li>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Help Center</a>
         </li>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Term & Policy</a>
         </li>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Privacy Policy</a>
         </li>
       </ul>
       <ul className="mb-4">
         <h5 className="text-xl font-medium text-slate-900">Services</h5>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Find Job</a>
         </li>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Post a job</a>
         </li>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Hire for your team</a>
         </li>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Press</a>
         </li>
       </ul>
       <ul className="mb-4">
         <h5 className="text-xl font-medium text-slate-900">Quick Link</h5>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Twitter</a>
         </li>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Linkedin</a>
         </li>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Facebook</a>
         </li>
-        <li className="my-5 text-base">
+        <li className="my-5 text-base font-light">
           <a href="index">Blog</a>
         </li>
       </ul>
