@@ -14,46 +14,46 @@ const footer = () => {
       </div>
       <ul className="mb-4">
         <h5 className="text-xl font-medium text-slate-900">Quick Link</h5>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">About</a>
         </li>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Help Center</a>
         </li>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Term & Policy</a>
         </li>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Privacy Policy</a>
         </li>
       </ul>
       <ul className="mb-4">
         <h5 className="text-xl font-medium text-slate-900">Services</h5>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Find Job</a>
         </li>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Post a job</a>
         </li>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Hire for your team</a>
         </li>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Press</a>
         </li>
       </ul>
       <ul className="mb-4">
         <h5 className="text-xl font-medium text-slate-900">Quick Link</h5>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Twitter</a>
         </li>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Linkedin</a>
         </li>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Facebook</a>
         </li>
-        <li className="my-5 ">
+        <li className="my-5 text-base">
           <a href="index">Blog</a>
         </li>
       </ul>
