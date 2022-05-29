@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import './App.css';
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero_section/hero';
@@ -113,10 +114,15 @@ export default function App() {
   //   const indexOfLastPost = currentPage * postsPerPage;
   //   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   //   const currentPosts = arryjobs.slice(indexOfFirstPost, indexOfLastPost);
+const [showIcon, setShowIcon] = useState(false);
+const toggle = () => {
+  setShowIcon(!showIcon);
+  
+};
   return (
 
     <div className=''>
-      <Navbar btnValue={'nothing'} />
+      <Navbar btnValue={'nothing'}  isOpen={toggle} valueIcon={showIcon}/>
       <Hero />
       <Section jobs={arryjobs} />
       <Subscribe />

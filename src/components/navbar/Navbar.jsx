@@ -68,8 +68,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden lg:absolute top-0 right-0 bg-red-500 transition w-52 h-screen fixed">
-            <div className="px-2 pt-2 pb-3 mt-20 text-center">
+          <Disclosure.Panel className="sm:hidden lg:absolute top-0 right-0 bg-red-500 z-40 transition w-52 h-screen fixed">
+            <div className="px-2 pt-2 pb-3 mt-40 text-center">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
