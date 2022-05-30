@@ -120,9 +120,8 @@ const toggle = () => {
   
 };
   return (
-
-    <div className=''>
-      <Navbar btnValue={'nothing'}  isOpen={toggle} valueIcon={showIcon}/>
+    <div className="font-sans">
+      <Navbar btnValue={'nothing'} isOpen={toggle} valueIcon={showIcon} />
       <Hero />
       <Section jobs={arryjobs} />
       <Subscribe />

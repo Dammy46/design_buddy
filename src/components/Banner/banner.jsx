@@ -2,7 +2,7 @@ import React from 'react'
 import Btn from '../Button/button'
 const banner = () => {
   return (
-    <div className="mt-12 flex justify-between items-center h-auto bg-cyan-900 pl-10 pr-8 lg:pr-24 md:pr-24 py-8 rounded-md ">
+    <div className="mt-12 flex justify-between items-center h-auto bg-cyan-900 pl-10 pr-8 lg:pr-24 md:pr-24 py-8 rounded-lg ">
       <div>
         <h3 className="text-white lg:text-4xl md:text-3xl text-xl mx-w-md font-semibold">
           Join Designbuddy And Get Hired
