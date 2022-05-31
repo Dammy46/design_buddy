@@ -13,7 +13,7 @@ const footer = () => {
         </a>
       </div>
       <ul className="mb-8">
-        <h5 className="text-xl font-medium text">Quick Link</h5>
+        <h5 className="text-xl font-semibold text">Quick Link</h5>
         <li className="my-4 text-base font-light">
           <a href="index">About</a>
         </li>
@@ -28,7 +28,7 @@ const footer = () => {
         </li>
       </ul>
       <ul className="mb-8">
-        <h5 className="text-xl font-medium text">Services</h5>
+        <h5 className="text-xl font-semibold text">Services</h5>
         <li className="my-4 text-base font-light">
           <a href="index">Find Job</a>
         </li>
@@ -43,7 +43,7 @@ const footer = () => {
         </li>
       </ul>
       <ul className="mb-8">
-        <h5 className="text-xl font-medium text">Quick Link</h5>
+        <h5 className="text-xl font-semibold text">Quick Link</h5>
         <li className="my-4 text-base font-light">
           <a href="index">Twitter</a>
         </li>
