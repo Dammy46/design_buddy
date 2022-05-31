@@ -2,9 +2,9 @@ import React from 'react';
 
 const footer = () => {
   return (
-    <div className="container mx-auto px-8 pt-24 lg:flex lg:justify-around md:flex md:justify-between block ">
+    <div className="container mx-auto px-8 pt-24 lg:flex lg:justify-around md:flex md:justify-between block lg:text-left md:text-left text-center">
       <div className="lg:w-72 lg:block  lg:mb-0 mb-11 ">
-        <a href="index">
+        <a href="index" className='flex justify-center'>
           <img
             src="	https://the-design-buddy.netlify.app/assets/bottom.8038c058.svg"
             alt="logo"
@@ -13,7 +13,7 @@ const footer = () => {
         </a>
       </div>
       <ul className="mb-8">
-        <h5 className="text-xl font-medium text-slate-900">Quick Link</h5>
+        <h5 className="text-xl font-medium text">Quick Link</h5>
         <li className="my-4 text-base font-light">
           <a href="index">About</a>
         </li>
@@ -28,7 +28,7 @@ const footer = () => {
         </li>
       </ul>
       <ul className="mb-8">
-        <h5 className="text-xl font-medium text-slate-900">Services</h5>
+        <h5 className="text-xl font-medium text">Services</h5>
         <li className="my-4 text-base font-light">
           <a href="index">Find Job</a>
         </li>
@@ -43,7 +43,7 @@ const footer = () => {
         </li>
       </ul>
       <ul className="mb-8">
-        <h5 className="text-xl font-medium text-slate-900">Quick Link</h5>
+        <h5 className="text-xl font-medium text">Quick Link</h5>
         <li className="my-4 text-base font-light">
           <a href="index">Twitter</a>
         </li>

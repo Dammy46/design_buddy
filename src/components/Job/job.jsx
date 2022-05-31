@@ -25,10 +25,20 @@ const job = ({ eachJob }) => {
            />
          </div>
          <div className="lg:ml-9 ml-5">
-           <span className="lg:text-2xl md:text-2xl text-base">
+           <span
+             className={classNames(
+               eachJob.active ? 'text-white' : 'text-gray-500',
+               'lg:text-2xl md:text-2xl text-base font-normal'
+             )}
+           >
              {eachJob.brand}
            </span>
-           <h2 className="lg:text-3xl md:text-3xl text-xl my-2.5 text-neutral font-medium">
+           <h2
+             className={classNames(
+               eachJob.active ? 'text-white' : 'text-gray-700',
+               'lg:text-3xl md:text-3xl text-xl my-2.5 text-neutral font-semibold'
+             )}
+           >
              {eachJob.job}
            </h2>
            <p className="lg:text-normal md:text-normal text-sm">
@@ -38,13 +48,13 @@ const job = ({ eachJob }) => {
          <div
            className={classNames(eachJob.active ? 'ml-auto block' : 'hidden')}
          >
-           <span className="uppercase text-green-600 lg:block md:block hidden font-medium">
+           <span className="uppercase text-green-500 lg:block md:block hidden font-medium">
              featured 🔥
            </span>
            <Btn
              btnValue={'Apply Now'}
              btnStyle={
-               'px-5 py-2.5 my-5 text-white bg-white text-red-500 font-normal rounded lg:block md:block hidden'
+               'px-5 py-2.5 my-5 text-white bg-white text-red-500 font-normal rounded lg:block md:block hidden font-semibold'
              }
            />
          </div>

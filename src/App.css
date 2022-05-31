@@ -1,4 +1,9 @@
-
+.bg{
+   background: #061f26;
+}
+.text{
+  color: #1f2937;
+}
 .App {
   text-align: center;
 }

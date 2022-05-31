@@ -36,14 +36,16 @@ const Search = () => {
   };
   return (
     <div className="flex mt-20 lg:justify-between md:justify-between">
-      <div className="border-2 border-slate-600 rounded-md lg:w-4/5 md:w-2/3  flex items-center">
+      <div className="border-2 border-slate-600 rounded-md lg:w-5/6 lg:mr-2.5 md:w-full  flex items-center">
         <Listbox value={selected} onChange={setSelected}>
           {({ open }) => (
             <>
               <div className="relative">
                 <Listbox.Button className="relative lg:w-48 w-32 bg-white border-none rounded-md lg:pl-3 pl-2 pr-10 py-2 text-left cursor-default focus:outline-none sm:text-sm">
                   <span className="flex items-center">
-                    <span className="ml-3 block truncate lg:text-xl text-base">{selected.name}</span>
+                    <span className="ml-3 block truncate lg:text-xl text-base">
+                      {selected.name}
+                    </span>
                   </span>
                   <span className="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
                     <SelectorIcon
@@ -120,7 +122,7 @@ const Search = () => {
       <Btn
         btnValue={'Search'}
         btnStyle={
-          'hidden lg:block md:block bg-red-500 lg:py-4 lg:px-4 w-48 md:44 px-3 py-4 font-sans tracking-wider text-base font-normal border-none uppercase tracking-wide rounded-lg cursor-pointer text-gray-50'
+          'hidden lg:block md:block bg-red-500 lg:py-4 lg:px-4 w-48 md:44 px-3 py-4 font-sans tracking-wider text-base font-semibold border-2 border-red-500 uppercase tracking-wide rounded-lg cursor-pointer text-gray-50 transition ease-in-out hover:bg-white hover:text-black '
         }
       />
     </div>
