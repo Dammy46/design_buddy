@@ -3,7 +3,6 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Btn from '../Button/button';
-import './nav.css'
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'Job', href: '#', current: false },

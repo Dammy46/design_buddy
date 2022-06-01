@@ -4,7 +4,7 @@ const banner = () => {
   return (
     <div className="mt-12 flex justify-between items-center h-auto bg pl-10 pr-8 lg:pr-24 md:pr-24 py-8 rounded-2xl ">
       <div>
-        <h3 className="text-white lg:text-4xl md:text-3xl text-xl mx-w-md font-semibold">
+        <h3 className="text-white lg:text-4xl md:text-3xl text-xl mx-w-md font-semibold poppins">
           Join Designbuddy And Get Hired
         </h3>
         <Btn

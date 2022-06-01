@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 const sub = () => {
   return (
     <div className="container mx-auto lg:text-center mt-20 px-8">
-      <h2 className="font-semibold text-xl lg:text-4xl md:text-3xl  text">
+      <h2 className="font-semibold text-xl lg:text-4xl md:text-3xl poppins  text">
         Subscribe to latest job openings
       </h2>
       <p className="my-2 text-current text-xl font-light lg:font-normal">
@@ -29,6 +29,6 @@ const sub = () => {
       </div>
     </div>
   );
-}
+};
 
-export default sub
+export default sub;
