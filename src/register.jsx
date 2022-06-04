@@ -46,7 +46,7 @@ const register = () => {
             {google}
             Continue with Google
           </button>
-          <p className="font-semibold relative text-center my-5 before:bg-black before:absolute before:w-40 before:h-px before:left-0 before:top-3 after:bg-black after:absolute after:w-40 after:h-px after:right-0 after:top-3">
+          <p className="font-semibold relative text-center my-5 before:bg-black before:absolute lg:before:w-40 md:before:w-40 before:w-36 before:h-px before:left-0 before:top-3 after:bg-black after:absolute lg:after:w-40 md:after:w-40 after:w-36 after:h-px after:right-0 after:top-3">
             Or
           </p>
 
