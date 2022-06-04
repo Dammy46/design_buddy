@@ -1,14 +1,13 @@
-import {useState} from 'react'
+
 import './App.css';
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero_section/hero';
 import Section from './components/section/section'
 import Subscribe from './components/Subscribtion/sub'
+import Pagination from './components/pagination/pagination';
 import Footer from './components/Footer/footer'
-// import { useState } from 'react';
-
 export default function App() {
-      const arryjobs = [
+    const arryjobs = [
         {
           id: 1,
           file: 'https://i.stack.imgur.com/UEvOq.png',
@@ -114,18 +113,18 @@ export default function App() {
   //   const indexOfLastPost = currentPage * postsPerPage;
   //   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   //   const currentPosts = arryjobs.slice(indexOfFirstPost, indexOfLastPost);
-const [showIcon, setShowIcon] = useState(false);
-const toggle = () => {
-  setShowIcon(!showIcon);
-  
-};
+
   return (
-    <div className="font-sans">
-      <Navbar btnValue={'nothing'} isOpen={toggle} valueIcon={showIcon} />
-      <Hero />
-      <Section jobs={arryjobs} />
-      <Subscribe />
-      <Footer />
+    <div>
+      <Navbar btnValue={'nothing'}/>
+       <Hero />
+       <Section jobs={arryjobs} />
+       <Pagination />
+       <Subscribe />
+       <Footer />
     </div>
   );
 }
+    // <div className="font-sans">
+
+    // </div>

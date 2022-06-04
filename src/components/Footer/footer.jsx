@@ -1,10 +1,10 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const footer = () => {
   return (
     <div className="container mx-auto px-8 pt-24 lg:flex lg:justify-around md:flex md:justify-between block lg:text-left md:text-left text-center">
       <div className="lg:w-72 lg:block  lg:mb-0 mb-11 ">
-        <a href="index" className='flex justify-center'>
+        <a href="index" className="flex justify-center">
           <img
             src="	https://the-design-buddy.netlify.app/assets/bottom.8038c058.svg"
             alt="logo"
@@ -15,13 +15,13 @@ const footer = () => {
       <ul className="mb-8">
         <h5 className="text-xl font-semibold text">Quick Link</h5>
         <li className="my-4 text-base font-light">
-          <a href="index">About</a>
+          <Link to="/register">Register</Link>
         </li>
         <li className="my-4 text-base font-light">
-          <a href="index">Help Center</a>
+          <Link to="/signin">Sign in</Link>
         </li>
         <li className="my-4 text-base font-light">
-          <a href="index">Term & Policy</a>
+          <Link to="/home">Home</Link>
         </li>
         <li className="my-4 text-base font-light">
           <a href="index">Privacy Policy</a>
