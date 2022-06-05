@@ -40,9 +40,7 @@ const Navbar = () => {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    item.current
-                      ? 'text-red-500'
-                      : 'text-gray-400 hover:text-red-500',
+                    item.current ? 'text' : 'text-gray-400 hover:text-red-500',
                     'px-3 py-2 rounded-md text-base font-normal'
                   )}
                   aria-current={item.current ? 'page' : undefined}
@@ -53,7 +51,7 @@ const Navbar = () => {
               <Btn
                 btnValue={'Post Job'}
                 btnStyle={
-                  'bg-red-500 p-4 font-normal border-none tracking-wide rounded-lg cursor-pointer ml-3 text-gray-50'
+                  'cursor-pointer text-white btn-bg btn-border py-2.5 px-5 rounded font-semibold ml-3'
                 }
               />
             </div>
@@ -74,7 +72,7 @@ const Navbar = () => {
           focus
           className="absolute w-60 top-0 inset-x-0 transition transform origin-top-right md:hidden"
         >
-          <div className=" h-screen shadow-lg ring-opacity-5 bg-red-500 divide-y-2 divide-gray-50">
+          <div className=" h-screen shadow-lg ring-opacity-5 btn-bg divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-end">
                 {/* <div>

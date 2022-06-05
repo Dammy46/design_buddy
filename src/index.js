@@ -6,6 +6,7 @@ import App from './App';
 import Register from './register'
 import Sign from './sign';
 import Home from './home';
+import FAQs from './FAQs';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +17,7 @@ root.render(
       <Route path="register" element={<Register />} />
       <Route path="signIn" element={<Sign />} />
       <Route path="home" element={<Home />} />
+      <Route path="faqs" element={<FAQs />} />
     </Routes>
   </BrowserRouter>
 );

@@ -9,7 +9,7 @@ const banner = () => {
         </h3>
         <Btn
           btnValue={'Get Hired'}
-          btnStyle={'px-5 py-2.5 my-5 text-white bg-red-500 font-normal rounded'}
+          btnStyle={'px-5 py-2.5 my-5 text-white btn-bg font-semibold rounded'}
         />
       </div>
       <div className='lg:block hidden'>

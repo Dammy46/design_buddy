@@ -37,7 +37,7 @@ const Search = () => {
           {remote.map((opt) => (
             <option
               key={opt.id}
-              className="text-gray-900 cursor-pointer bg-white py-2 hover:text-white hover:bg-red-500"
+              
             >
               {opt.name}
             </option>
@@ -57,7 +57,7 @@ const Search = () => {
       <Btn
         btnValue={'Search'}
         btnStyle={
-          'hidden lg:block bg-red-500 lg:py-4 lg:px-4 w-48 md:44 px-3 py-4 font-sans tracking-wider text-base font-semibold border-2 border-red-500 uppercase tracking-wide rounded-lg cursor-pointer text-gray-50 transition ease-in-out hover:bg-white hover:text-black '
+          'hidden lg:block btn-bg lg:py-4 lg:px-4 w-48 md:44 px-3 py-4 font-sans tracking-wider text-base font-semibold btn-border uppercase tracking-wide rounded-lg cursor-pointer text-gray-50 transition ease-in-out hover:bg-white hover:text-black '
         }
       />
     </div>

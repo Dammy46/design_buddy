@@ -1,11 +1,12 @@
-import Navbar from './components/navbar/Navbar'
-import Hero from './components/hero_section/hero';
-import Section from './components/section/section'
-import Subscribe from './components/Subscribtion/sub'
-import Pagination from './components/pagination/pagination';
-import Footer from './components/Footer/footer'
-export default function App() {
-    const arryjobs = [
+import React from 'react'
+import Navbar from './components/navbar/Navbar';
+import Hero from './components/Hero2/hero2';
+import Section from './components/section/section';
+import Btn from './components/Button/button';
+import Subscrition from './components/Subscribtion/sub'
+import Footer from './components/Footer/footer';
+const home = () => {
+      const arryjobs = [
         {
           id: 1,
           file: 'https://i.stack.imgur.com/UEvOq.png',
@@ -104,25 +105,32 @@ export default function App() {
 
           remote: 'Remote',
           active: false,
-        }
+        },
       ];
-  // const currentPage = 1
-  // const postsPerPage = 10
-  //   const indexOfLastPost = currentPage * postsPerPage;
-  //   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  //   const currentPosts = arryjobs.slice(indexOfFirstPost, indexOfLastPost);
-
   return (
     <div>
-      <Navbar btnValue={'nothing'}/>
-       <Hero />
-       <Section jobs={arryjobs} />
-       <Pagination />
-       <Subscribe />
-       <Footer />
+      <section className="h-screen">
+        <Navbar />
+        <Hero />
+      </section>
+      <section>
+        <Section jobs={arryjobs} />
+        <div className="container items-center text-center mt-20">
+          <Btn
+            btnValue={'Load all jobs'}
+            btnStyle={
+              'cursor-pointer text-white btn-bg btn-border py-2.5 px-5 rounded font-semibold '
+            }
+          />
+        </div>
+      </section>
+      <section>
+        <Subscrition />
+      </section>
+      <section>
+          <Footer />
+      </section>
     </div>
   );
 }
-    // <div className="font-sans">
-
-    // </div>
+export default home;

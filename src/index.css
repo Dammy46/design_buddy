@@ -1,14 +1,55 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  /* ---------------------colors------------------     */
+  --secondary-color: rgb(255 102 102);
+  --primary-color: #ffdede7a;
+  --dark-color: #061f26;
+
+  --light-gray: #9ca3af;
+  --deep-light-gray: #4a5568;
+  --dark-gray: #2d3748;
+  --deep-dark-gray: #1f2937;
+  --body-font: 'Open Sans', sans-serif;
+  --header-font: 'Poppins', sans-serif;
+}
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+}
+.header {
+  color: var(--deep-dark-gray);
+  font-family: var(--header-font);
+}
+.paragraph {
+  color: var(--light-gray);
+}
+.text{
+  color: var(--secondary-color);
+}
+.btn-bg {
+  background: var(--secondary-color);
+}
+.btn-border {
+  border: 2px solid var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+.bg{
+  background: var(--dark-color);
+}
+.btn2-color {
+  color: var(--dark-color);
+}
+.link{
+  color: var(--deep-dark-gray);
+}
+.acc{
+  color: var(--dark-gray);
 }
 
 code {
