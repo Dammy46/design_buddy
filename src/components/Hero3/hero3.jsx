@@ -23,8 +23,7 @@ const hero2 = () => {
       </div>
       <div className="w-full hidden lg:block">
         <img
-          src="	https://www.figma.com/file/t8PZsQAQJZMegn882SytbS/Designbuddy-1.0?node-id=114%3A458
-"
+          src="	https://actisense.com/wp-content/uploads/2021/12/Flat-Illustration1x.png"
           alt=""
         />
       </div>
