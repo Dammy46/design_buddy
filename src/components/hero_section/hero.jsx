@@ -4,7 +4,7 @@ import Search from '../form/form'
 const hero = () => {
   return (
     <div className="container lg:text-center mx-auto px-8 sm:px-6 md:text-left text-left">
-      <h1 className="lg:text-7xl lg:leading-tight pt-16 header text-4xl font-medium">
+      <h1 className="lg:text-7xl lg:leading-tight pt-16 header text-4xl font-semibold">
         Start hiring the best Design Talent
       </h1>
       <p className="mt-5 text-xl paragraph leading-7 font-sans">
