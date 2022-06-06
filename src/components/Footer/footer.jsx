@@ -30,7 +30,7 @@ const footer = () => {
       <ul className="mb-8">
         <h5 className="text-xl font-semibold link">Services</h5>
         <li className="my-4 text-base font-light">
-          <a href="index">Find Job</a>
+          <Link to="/community">Community</Link>
         </li>
         <li className="my-4 text-base font-light">
           <a href="index">Post a job</a>

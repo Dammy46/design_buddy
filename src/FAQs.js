@@ -8,7 +8,7 @@ const FAQs = () => {
    
   return (
      <div>
-        <section className='h-screen'>
+        <section>
            <Navbar />
            <Hero />
         </section>

@@ -2,7 +2,7 @@ import React from 'react';
 import Btn from '../Button/button';
 const hero2 = () => {
   return (
-    <div className="container mx-auto px-8 flex pt-28">
+    <div className="container mx-auto px-8 flex items-center lg:pt-10 pt-16">
       <div>
         <h2 className="lg:text-5xl md:text-5xl text-3xl font-semibold header">
           Frequently Asked Question.

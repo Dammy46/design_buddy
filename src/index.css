@@ -45,6 +45,9 @@ h1, h2, h3, h4, h5 {
 .bg{
   background: var(--dark-color);
 }
+.h4{
+  color: var(--deep-dark-gray);
+}
 .btn2-color {
   color: var(--dark-color);
 }

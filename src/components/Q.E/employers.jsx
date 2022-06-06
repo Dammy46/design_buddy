@@ -64,7 +64,7 @@ const employers = () => {
   ];
   return (
     <div className="container mx-auto px-8">
-      <div className="">
+      <div className="mt-20">
         <h2 className="header text-center text-4xl mb-16">Employers</h2>
         <div className="accordion w-full cursor-pointer">
           {accordionData.map(({ title, content }) => (
