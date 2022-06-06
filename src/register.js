@@ -40,7 +40,7 @@ const register = () => {
       </div>
       <div className="flex flex-col justify-center">
         <form className="max-w-[405px] w-full mx-auto bg-white p-4">
-          <h2 className="text-4xl font-bold text-center py-6 header">
+          <h2 className="text-3xl font-bold text-center py-6 header">
             Create Your Account
           </h2>
           <p className="text-center py-2 font-semibold">
