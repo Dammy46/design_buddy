@@ -3,10 +3,10 @@ import Btn from '../Button/button';
 const hero4 = ({ image }) => {
   return (
     <div className="container mx-auto px-8 ">
-      <h1 className="header font-semibold lg:text-6xl text-4xl tracking-wider leading-normal text-center pt-16">
+      <h1 className="header font-semibold lg:text-6xl text-4xl tracking-wider lg:leading-normal md:leading-normal  lg:text-center md:text-center pt-16">
         Connect, learn and find jobs with Designbuddy
       </h1>
-      <p className="my-6 paragraph text-lg text-center font-normal">
+      <p className="my-6 paragraph text-lg lg:text-center md:text-center font-normal">
         Join 10000+ designers and gain access to our global community where you
         can find opportunities that you won’t find anywhere else.
       </p>
@@ -17,7 +17,9 @@ const hero4 = ({ image }) => {
             'cursor-pointer text-white btn-bg btn-border py-2.5 px-5 rounded font-semibold mt-5'
           }
         />
-        <img src={image} alt="" />
+        <div className="flex justify-center items-center">
+          <img src={image} alt="" />
+        </div>
       </div>
       <h2 className="header text-2xl lg:text-4xl md:text-4xl font-bold">
         What’s Designbuddy Community Network?

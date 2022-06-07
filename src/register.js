@@ -1,5 +1,55 @@
-import React from 'react';
-const register = () => {
+import React, { useState } from 'react';
+import FormInput from './components/Input/input'
+const Register = () => {
+  const [values, setValues] = useState({
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  })
+  const inputs = [
+    {
+      id: 1,
+      name: 'name',
+      type: 'text',
+      placeholder: 'Name',
+      errorMessage:
+        "Name should be 5-16 characters and should't include any special character",
+
+      required: true,
+
+    },
+    {
+      id: 2,
+      name: 'email',
+      type: 'email',
+      placeholder: 'Email',
+      errorMessage: 'should be a vaild email address',
+      required: true,
+    },
+    {
+      id: 3,
+      name: 'password',
+      type: 'password',
+      placeholder: 'Password',
+      errorMessage:
+        'Password should be 8-20 characters and include atleast 1 letter, 1 number and special characters',
+      required: true,
+    },
+    {
+      id: 4,
+      name: 'confirmPassword',
+      type: 'password',
+      placeholder: 'Confirm Password',
+      errorMessage: 'Password do not match',
+      pattern: values.password,
+      required: true,
+    },
+  ];
+  const onChange = (e) => {
+    setValues({...values, [e.target.name]: e.target.value})
+  }
+  console.log(values);
    const google = (
      <svg
        xmlns="http://www.w3.org/2000/svg"
@@ -57,22 +107,9 @@ const register = () => {
           <p className="font-semibold relative text-center my-5 before:bg-black before:absolute lg:before:w-40 md:before:w-40 before:w-36 before:h-px before:left-0 before:top-3 after:bg-black after:absolute lg:after:w-40 md:after:w-40 after:w-36 after:h-px after:right-0 after:top-3">
             Or
           </p>
-
-          <input
-            className="border p-4 w-full my-3 rounded focus:outline-none"
-            type="text"
-            placeholder="Name"
-          />
-          <input
-            className="border p-4 w-full my-3 rounded focus:outline-none"
-            type="Email"
-            placeholder="Email"
-          />
-          <input
-            className="border p-4 w-full my-3 rounded focus:outline-none"
-            type="password"
-            placeholder="Password"
-          />
+          {inputs.map((input) => (
+            <FormInput  key={input.id} {...input} value={values[input.name]} onChange={onChange}/>
+          ))}
           <div className="flex justify-between items-baseline">
             <p className="flex items-center font-normal paragraph">
               Tick to get weekly products and graphics design jobs straight to
@@ -94,4 +131,4 @@ const register = () => {
   );
 };
 
-export default register;
+export default Register;

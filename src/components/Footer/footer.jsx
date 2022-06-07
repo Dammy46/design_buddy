@@ -33,7 +33,7 @@ const footer = () => {
           <Link to="/community">Community</Link>
         </li>
         <li className="my-4 text-base font-light">
-          <a href="index">Post a job</a>
+          <Link to="/post">Post a job</Link>
         </li>
         <li className="my-4 text-base font-light">
           <a href="index">Hire for your team</a>

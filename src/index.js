@@ -8,6 +8,7 @@ import Sign from './sign';
 import Home from './home';
 import FAQs from './FAQs';
 import Community from './Community';
+import Post from './Post';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
       <Route path="home" element={<Home />} />
       <Route path="faqs" element={<FAQs />} />
       <Route path="community" element={<Community />} />
+      <Route path="post" element={<Post />} />
     </Routes>
   </BrowserRouter>
 );
