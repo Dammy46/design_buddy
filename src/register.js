@@ -94,7 +94,7 @@ const Register = () => {
             Create Your Account
           </h2>
           <p className="text-center py-2 font-semibold">
-            Let DesignBuddy helps you getv the best opportunities that fits your
+            Let DesignBuddy helps you get the best opportunities that fits your
             roles
           </p>
           <button
