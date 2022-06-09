@@ -48,9 +48,11 @@ const Details = () => {
   return (
     <div className="container mx-auto px-8 mt-16">
       <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-x-4">
-        <div className="col-span-2 mb-10 lg:mb-0 md:mb-0">
+        <div className="lg:col-span-2 md:col-span-2 mb-10 lg:mb-0 md:mb-0">
           <h4 className="h4 mb-5">Job Details</h4>
-          <h2 className="header font-semibold mb-8 text-4xl">Senior Product Designer</h2>
+          <h2 className="header font-semibold mb-8 text-4xl">
+            Senior Product Designer
+          </h2>
           <p className="h4 text-base font-normal mb-6">
             <span>
               Tantrum Studio is looking for freelance character designers to
