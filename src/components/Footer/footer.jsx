@@ -36,7 +36,7 @@ const footer = () => {
           <Link to="/post">Post a job</Link>
         </li>
         <li className="my-4 text-base font-light">
-          <Link to="/checkout">Checkout</Link>
+          <Link to="/preview">Preview</Link>
         </li>
         <li className="my-4 text-base font-light">
           <a href="index">Press</a>

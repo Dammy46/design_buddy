@@ -9,7 +9,7 @@ import Home from './home';
 import FAQs from './FAQs';
 import Community from './Community';
 import Post from './Post';
-import Checkout from './checkout';
+import Preview from './preview';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,7 +23,7 @@ root.render(
       <Route path="faqs" element={<FAQs />} />
       <Route path="community" element={<Community />} />
       <Route path="post" element={<Post />} />
-      <Route path="checkout" element={<Checkout />} />
+      <Route path="preview" element={<Preview />} />
     </Routes>
   </BrowserRouter>
 );

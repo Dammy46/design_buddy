@@ -1,11 +1,14 @@
 import React from 'react'
 import Navbar from './components/navbar/Navbar';
-import Payment from './components/payment/payment';
+import Preview from './components/Details/details'
+import Footer from './components/Footer/footer';
 const checkout = () => {
+
   return (
      <div>
-        <Navbar />
-        <Payment />
+      <Navbar />
+      <Preview />
+      <Footer />
     </div>
   )
 }

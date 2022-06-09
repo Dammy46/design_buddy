@@ -33,7 +33,7 @@ const listing = () => {
         Already have one written? Copy and paste from an existing job listing on
         the web or from a Word or Google Doc).
       </p>
-      <textarea className="border w-full rounded pt-2 pr-2 pb-2 pl-4 h-56 my-4" />
+      <textarea className="border w-full rounded pt-2 pr-2 pb-2 pl-4 h-56 my-4 focus:outline-none" />
       <div className="grid lg:grid-cols-2 md:grid-cols-2 lg:gap-x-40 md:gap-x-20 mb-7">
         <div>
           <h4 className="h4 text-lg flex">
