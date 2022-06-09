@@ -18,7 +18,7 @@ const listing = () => {
         </div>
         <div>
           <h4 className="h4 text-lg flex">
-            Job Title <p className=" ml-2 text">*</p>
+            Company Name<p className=" ml-2 text">*</p>
           </h4>
           <input
             type="text"
