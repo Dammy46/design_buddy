@@ -16,7 +16,7 @@ const hero = () => {
         <Btn
           btnValue={'Post a Job'}
           btnStyle={
-            'btn-bg lg:py-4 lg:px-10 md:py-4 md:px-10 px-3 py-3.5 tracking-wider text-base font-semibold btn-border tracking-wide rounded-lg cursor-pointer  mr-1.5 text-gray-50 transition ease-in-out hover:bg-white hover:text-black'
+            'btn-bg lg:py-4 lg:px-10 md:py-4 md:px-10 px-3 py-3.5 tracking-wider text-base font-semibold btn-border tracking-wide rounded-lg cursor-pointer  mr-2 text-gray-50 transition ease-in-out hover:bg-white hover:text-black'
           }
         />
         <Btn
