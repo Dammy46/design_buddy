@@ -28,7 +28,7 @@ const job = ({ eachJob }) => {
            <span
              className={classNames(
                eachJob.active ? 'text-white' : 'text-gray-500',
-               'lg:text-2xl md:text-2xl text-base font-normal'
+               'lg:text-2xl md:text-2xl text-base font-semibold'
              )}
            >
              {eachJob.brand}
@@ -48,7 +48,7 @@ const job = ({ eachJob }) => {
          <div
            className={classNames(eachJob.active ? 'ml-auto block' : 'hidden')}
          >
-           <span className="uppercase text-green-500 lg:block md:block hidden font-medium">
+           <span className="uppercase text-green-500 lg:block md:block hidden font-semibold">
              featured 🔥
            </span>
            <Btn
